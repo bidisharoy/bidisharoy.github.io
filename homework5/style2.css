@@ -14,7 +14,6 @@ body{
 h1{
 	color: #B0C3D6;
 	font-family: "Phosphate";
-	font-weight: solid;
 	font-size: 70px;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
@@ -26,8 +25,6 @@ h1 a{
 
 /*NAV1*/
 .nav1wrapper{
-	left-margin: 50px;
-	right-margin: 50px;
 	display:block;
 	vertical-align: center
 }
