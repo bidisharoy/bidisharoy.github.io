@@ -314,6 +314,9 @@ ul{
 	display: inline-block;
 	padding: 9px 0 0 5px;
 }
+.boxMyClickState{
+	border-color: #B393C3;
+}
 .fillChoice a{
 	color: black;
 	padding-top: 9px;
