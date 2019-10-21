@@ -7,13 +7,17 @@
 </head>
 <!-- TOP NAV (NAV1) -->
 	<div class='nav1Wrapper'>
+		<div class='nav1'>
 			<ul>
 				<li class="nav1left"><a href='#'>About</a></li>
 				<li class="nav1left"><a href='#'>Contact</a></li>
 				<li class="nav1left"><a href='#'>Hours & Locations</a></li>
-				<li class="nav1right"><a href='cartpage.html'><img src="cart.svg" width="25" height="15" alt=altcart>Cart</a></li>
-				<li class="nav1right"><a href='#'><img src="heart.svg" width="25" height="15" alt=altlikes>Likes </a></li>
+				<li class="headerCartItems" >
+					<a href='cartpage.html' id="clicks">0</a></li>
+				<li class="headerCartStyle"><a href='cartpage.html'><img src="cart.svg" width="25" height="15" id=headerCart alt=altcart>Cart :</a></li>
+				<li class="headerLikesStyle"><a href='#'><img src="heart.svg" width="25" height="15" alt=altlikes>Likes </a></li>
 			</ul>
+		</div>
 	</div>
 <br>
 
@@ -120,9 +124,9 @@
 				<div class="LikesImage"><img src="heart.svg" width="30" height="20"></div>
 				<div class="Button2Text">Add to Likes</div>
 			</a></button>
-			<button class="button AddtoCart"><a href='#'>
-				<div class="CartImage"><img src="cart.svg" width="30" height="20"></div>
-				<div class="Button1Text">Add to Cart</div>
+			<button id="cartButton" class="button AddtoCart" ><a href='#'>
+				<div id="cartButton" class="CartImage"><img src="cart.svg" width="30" height="20"></div>
+				<div id="cartButton" class="Button1Text">Add to Cart</div>
 			</a></button>
 		</div>
 	</div>

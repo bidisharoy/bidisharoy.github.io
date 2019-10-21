@@ -26,10 +26,41 @@ h1 a{
 /*NAV1*/
 .nav1wrapper{
 	display:block;
-	vertical-align: center
+	vertical-align: center;
 }
-.nav1left {float:left; display: inline-block; padding-right: 15px;}
-.nav1right {float:right; display: inline-block; padding-right: 15px;}
+.nav1 li a{
+	font-family: "Apple LiGothic";
+	display:inline-block;
+	text-decoration: none;
+	color: #547690;
+}
+.nav1left {
+	float:left; 
+	display: inline-block; 
+	padding-left: 20px; 
+	padding-right: 15px;
+	margin-left: 10px;
+}
+
+.headerLikesStyle{
+	float: right; 
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.headerCartStyle {
+	float: right; 
+	display: inline-block; 
+	padding-right: 10px;
+
+}
+.headerCartItems {
+	float:right; 
+	display: inline-block; 
+	padding-right: 5px;
+	margin-right: 20px;
+}
 
 /*NAV2*/
 .nav2 ul li{
@@ -40,7 +71,7 @@ h1 a{
 	padding-left: 10px;
 	padding-bottom: 5px;
 }
-li a{
+.nav2 li a{
 	font-family: "Apple LiGothic";
 	display:inline-block;
 	text-decoration: none;
