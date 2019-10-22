@@ -35,6 +35,7 @@ h1 a{
 	color: #547690;
 }
 .nav1left {
+	font-family: "Apple LiGothic";
 	float:left; 
 	display: inline-block; 
 	padding-left: 20px; 
@@ -332,6 +333,15 @@ ul{
 	border-style: solid;
 	box-sizing: border-box;
 	padding-left: 2px;
+}
+.pickColorState { /*JAVASCRIPT -- PICK COLOR FEEDBACK */
+	display: inline-block;
+	border-width: 1px;
+	width: 200px;
+	height: 35px;
+	border-style: solid;
+	box-sizing: border-box;
+	padding-left: 5px;
 }
 .box a{
 	display: inline-block;
