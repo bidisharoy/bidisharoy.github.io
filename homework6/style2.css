@@ -415,10 +415,10 @@ ul{
 	color:black;
 }
 .cartContainer{
-	padding: 20px 220px 0 0px;
+	padding: 20px 220px 0 30px;
 	margin: 0 auto;
   	display: flex;
-  	width: 70%;
+  	width: 80%;
   	flex-wrap: wrap;
   	flex-direction: row;
   	font-family: "Apple LiGothic", regular;
