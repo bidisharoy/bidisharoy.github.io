@@ -10,6 +10,7 @@
 
 body{
 	background-color: #FFFCF0;
+	font-family: 'Didact Gothic', sans-serif;
 }
 h1{
 	color: #B0C3D6;
@@ -71,11 +72,17 @@ h1 a{
 }
 
 /*NAV2*/
+
+.nav2 {
+	text-align: center;
+
+}
 .nav2 ul li{
 	font-size: 20px;
 	list-style-type: none;
 	display: inline-block;
-	align-content: center;
+	text-align: center;
+	padding-left: 10px;
 	padding-left: 10px;
 	padding-bottom: 5px;
 }
@@ -84,8 +91,8 @@ h1 a{
 	display:inline-block;
 	text-decoration: none;
 	color: #547690;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 li a:hover{
 	text-decoration: underline;
