@@ -12,6 +12,7 @@ function addedToCart(){
 	setTimeout(function() {
 		document.getElementById('cartButton').innerHTML=originalText;
 	}, 950);
+	window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
 //ADD TO LIKES BUTTON ("Favorites") + LIKES ICON CLICK COUNTER 
@@ -23,8 +24,9 @@ function addedToLikes(){
 //	if(clicks =1 || clicks % 2 !=0){
 		document.getElementById("addToLikesClicks").innerHTML=clicks;
 		document.getElementById('likesButton').innerHTML="<span style='color:white;'>Favorited!</span>"
+		window.scrollTo({top: 0, behavior: 'smooth'});
 		//setTimeout(function(AddedtoLikes) {
-		//	document.getElementById('likesButton').innerHTML='Remove from Favorites';
+		//document.getElementById('likesButton').innerHTML='Remove from Favorites';
 		//}, 950);
 };
 
