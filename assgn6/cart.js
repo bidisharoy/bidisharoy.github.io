@@ -19,13 +19,32 @@ var clicks = 0;
 var originalLikesButton = document.getElementById('likesButton').innerHTML;
 document.getElementById('likesButton').onclick=addedToLikes;
 function addedToLikes(){
-	document.getElementById('likesButton').innerHTML="<span style='color:#E4C442;'>Added to Likes!</span";
-	clicks +=1;
-	document.getElementById("addToLikesClicks").innerHTML=clicks;
-	setTimeout(function() {
-		document.getElementById('likesButton').innerHTML=originalLikesButton;
-	}, 950);
+	clicks=1;
+//	if(clicks =1 || clicks % 2 !=0){
+		document.getElementById("addToLikesClicks").innerHTML=clicks;
+		document.getElementById('likesButton').innerHTML="<span style='color:white;'>Favorited!</span>"
+		//setTimeout(function(AddedtoLikes) {
+		//	document.getElementById('likesButton').innerHTML='Remove from Favorites';
+		//}, 950);
 };
+
+/*
+function setRemove(){
+document.getElementById('likesButton').innerHTML="Remove from Favorites"
+		} else if(clicks % 2 == 0){
+		document.getElementById("addToLikesClicks").innerHTML='0';
+		document.getElementById('likesButton').innerHTML="<span style='color:#E4C442;'>Removed!</span>"
+		}
+	//document.getElementByClass("headerLikesStyle blackFavorite").style.visibility='visible';
+*/
+//var imgReplace = document.getElementsByClassName("myImg")[0];
+//imgReplace.src = "blackheart.svg"; 
+//imgReplace.style.visibility = "visible";
+//	setTimeout(function() {
+//		document.getElementById('likesButton').innerHTML=originalLikesButton;
+//	}, 950);
+
+
 
 //PICKING COLORS
 var originalStyleASS = document.getElementById('pickColorASS').innerHTML;

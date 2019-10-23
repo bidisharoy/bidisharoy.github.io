@@ -43,19 +43,26 @@ h1 a{
 	margin-left: 10px;
 }
 
-.headerLikesStyle{
+.headerLikesStyle {
 	float: right; 
 	display: inline-block;
 	padding-right: 10px;
 	padding-left: 20px;
 }
-
+/*
+.headerLikesStyle.blackFavorite {
+	float: right; 
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+*/
 .headerCartStyle {
 	float: right; 
 	display: inline-block; 
 	padding-right: 10px;
-
 }
+
 .headerNumbers {
 	float:right; 
 	display: inline-block; 
