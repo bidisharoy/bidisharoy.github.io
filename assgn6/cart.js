@@ -1,3 +1,5 @@
+//hi rushil!!!!
+
 //ADD TO CART BUTTON + CART ICON CLICK COUNTER 
 //timer credit to https://stackoverflow.com/questions/38393740/change-content-of-html-element-div-for-few-seconds
 var clicks = 0;
@@ -6,9 +8,22 @@ document.getElementById('cartButton').onclick=addedToCart;
 function addedToCart(){
 	document.getElementById('cartButton').innerHTML="<span style='color:#E4C442;'>Added!</span";
 	clicks +=1;
-	document.getElementById("clicks").innerHTML=clicks;
+	document.getElementById("addToCartClicks").innerHTML=clicks;
 	setTimeout(function() {
 		document.getElementById('cartButton').innerHTML=originalText;
+	}, 950);
+};
+
+//ADD TO LIKES BUTTON ("Favorites") + LIKES ICON CLICK COUNTER 
+var clicks = 0;
+var originalLikesButton = document.getElementById('likesButton').innerHTML;
+document.getElementById('likesButton').onclick=addedToLikes;
+function addedToLikes(){
+	document.getElementById('likesButton').innerHTML="<span style='color:#E4C442;'>Added to Likes!</span";
+	clicks +=1;
+	document.getElementById("addToLikesClicks").innerHTML=clicks;
+	setTimeout(function() {
+		document.getElementById('likesButton').innerHTML=originalLikesButton;
 	}, 950);
 };
 

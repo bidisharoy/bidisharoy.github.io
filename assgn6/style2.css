@@ -46,7 +46,7 @@ h1 a{
 .headerLikesStyle{
 	float: right; 
 	display: inline-block;
-	padding-right: 20px;
+	padding-right: 10px;
 	padding-left: 20px;
 }
 
@@ -56,7 +56,7 @@ h1 a{
 	padding-right: 10px;
 
 }
-.headerCartItems {
+.headerNumbers {
 	float:right; 
 	display: inline-block; 
 	padding-right: 5px;
