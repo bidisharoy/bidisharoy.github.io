@@ -1,23 +1,8 @@
-//hi rushil!!!!
-
 //ADD TO CART BUTTON + CART ICON CLICK COUNTER 
 //timer credit to https://stackoverflow.com/questions/38393740/change-content-of-html-element-div-for-few-seconds
-var clicks = 0;
-var originalText = document.getElementById('cartButton').innerHTML;
-document.getElementById('cartButton').onclick=addedToCart;
-function addedToCart(){
-	document.getElementById('cartButton').innerHTML="<span style='color:#E4C442;'>Added!</span";
-	clicks +=1;
-	document.getElementById("addToCartClicks").innerHTML=clicks;
-	setTimeout(function() {
-		document.getElementById('cartButton').innerHTML=originalText;
-	}, 950);
-	window.scrollTo({top: 0, behavior: 'smooth'});
-};
 
 //ADD TO LIKES BUTTON ("Favorites") + LIKES ICON CLICK COUNTER 
 var clicks = 0;
-var originalLikesButton = document.getElementById('likesButton').innerHTML;
 document.getElementById('likesButton').onclick=addedToLikes;
 function addedToLikes(){
 	clicks=1;
@@ -25,28 +10,13 @@ function addedToLikes(){
 		document.getElementById("addToLikesClicks").innerHTML=clicks;
 		document.getElementById('likesButton').innerHTML="<span style='color:white;'>Favorited!</span>"
 		window.scrollTo({top: 0, behavior: 'smooth'});
-		//setTimeout(function(AddedtoLikes) {
-		//document.getElementById('likesButton').innerHTML='Remove from Favorites';
-		//}, 950);
 };
 
-/*
-function setRemove(){
-document.getElementById('likesButton').innerHTML="Remove from Favorites"
-		} else if(clicks % 2 == 0){
-		document.getElementById("addToLikesClicks").innerHTML='0';
-		document.getElementById('likesButton').innerHTML="<span style='color:#E4C442;'>Removed!</span>"
-		}
-	//document.getElementByClass("headerLikesStyle blackFavorite").style.visibility='visible';
-*/
-//var imgReplace = document.getElementsByClassName("myImg")[0];
-//imgReplace.src = "blackheart.svg"; 
-//imgReplace.style.visibility = "visible";
-//	setTimeout(function() {
-//		document.getElementById('likesButton').innerHTML=originalLikesButton;
-//	}, 950);
-
-
+var name = 'Round Knit Pouf'
+var color = null;
+var fill = null;
+//var cart = [];
+var price = 20;
 
 //PICKING COLORS
 var originalStyleASS = document.getElementById('pickColorASS').innerHTML;
@@ -70,6 +40,7 @@ function pickedColorASS(){
 	document.getElementById('pickColorCD').innerHTML=originalStyleCD;
 	document.getElementById('pickColorCD').style.color='gray';
 	document.getElementById('pickColorCDText').style.color='gray';
+	var color = "ASS";
 };
 
 document.getElementById('pickColorMH').onclick=pickedColorMH;
@@ -88,6 +59,7 @@ function pickedColorMH(){
 	document.getElementById('pickColorCD').innerHTML=originalStyleCD;
 	document.getElementById('pickColorCD').style.color='gray';
 	document.getElementById('pickColorCDText').style.color='gray';
+	var color = "MH";
 };
 
 document.getElementById('pickColorRD').onclick=pickedColorRD;
@@ -106,6 +78,7 @@ function pickedColorRD(){
 	document.getElementById('pickColorCD').innerHTML=originalStyleCD;
 	document.getElementById('pickColorCD').style.color='gray';
 	document.getElementById('pickColorCDText').style.color='gray';
+	var color = "RD";
 };
 
 document.getElementById('pickColorCD').onclick=pickedColorCD;
@@ -124,6 +97,7 @@ function pickedColorCD(){
 	document.getElementById('pickColorRD').innerHTML=originalStyleRD;
 	document.getElementById('pickColorRD').style.color='gray';
 	document.getElementById('pickColorRDText').style.color='gray';
+	var color = "CD";
 };
 
 //PICKING FILLINGS
@@ -143,6 +117,7 @@ function pickedFillDD(){
 	document.getElementById('pickFillMD').innerHTML=originalStyleMD;
 	document.getElementById('pickFillMD').style.color='gray';
 	document.getElementById('pickFillMDText').style.color='gray';
+	var fill = "DD";
 };
 
 document.getElementById('pickFillHAPB').onclick=pickedFillHAPB;
@@ -157,6 +132,7 @@ function pickedFillHAPB(){
 	document.getElementById('pickFillMD').innerHTML=originalStyleMD;
 	document.getElementById('pickFillMD').style.color='gray';
 	document.getElementById('pickFillMDText').style.color='gray';
+	var fill = "HAPB";
 };
 
 document.getElementById('pickFillMD').onclick=pickedFillMD;
@@ -171,59 +147,79 @@ function pickedFillMD(){
 	document.getElementById('pickFillHAPB').innerHTML=originalStyleHAPB;
 	document.getElementById('pickFillHAPB').style.color='gray';
 	document.getElementById('pickFillHAPBText').style.color='gray';
+	var fill = "MD";
+
 };
 
-
-/* CODE THAT DID NOT WORK / SAVING FOR LATER
-
-var loserColors=[document.getElementById('pickColorMH'), document.getElementById('pickColorRD'), document.getElementById('pickColorCD')];
-
-var addToCartButton = document.getelementbyclassname('addToCart')
-for (var i = 0; i < addToCartButton.length, i++) {
-	var button = addToCart[i]
-	button.addEventListener('click', function(event) {
-		var buttonClicked = event.target
-		buttonClicked.
-	})
+/* IMAGE CAROUSEL (EXTRA CREDIT) (CREDIT TO W3SCHOOLS https://www.w3schools.com/howto/howto_js_slideshow.asp) */
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-var pickColorButton = document.getelementbyclassname('box')
-for (var i = 0; i < box.length, i++) {
-	var color = box[i]
-	color.addEventListener('click', function(event) {
-		var colorSelect = event.target
-		colorSelect.toggleClass('.boxMyClickState')
-	})
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
-(function (){
-	let CartInfo = getelementbyid('headerCart')
-})();
 
-// x.innerhtml
-// html event attributes (onclick, onmousedown, etc.)
-// local storage vs session storage
-
-var addToCartButton = document.getelementbyclassname('Button1Text');
-var headerCart = document.getElementById(headerCart);
-addToCartButton.onclick = function()
-{updateHeaderCart()};
-function updateHeaderCart() {
-headerCart.innerHTML = "ADDED"
-};
-
-document.getElementById('cartButton').onclick=countClicks;
-var cnt=0;
-function countClicks(){
-	cnt=parseInt(cnt)+parseInt(1);
-	var divData=document.getElementById("cartButton");
-	divData.innerHTML=cnt;
+/* ASSIGNMENT 6B BELOW */
+function pillowSelection(name, color, fill, price){
+	this.name=name;
+	this.color=color;
+	this.fill=fill;
+	this.price=price;
 }
 
 var clicks = 0;
-document.getElementById('cartButton').onclick=clickCounter;
-function clickCounter(){
+var originalText = document.getElementById('cartButton').innerHTML;
+document.getElementById('cartButton').onclick=addedToCart;
+function addedToCart(){
+	document.getElementById('cartButton').innerHTML="<span style='color:#E4C442;'>Added!</span";
 	clicks +=1;
-	document.getElementById("clicks").innerHTML=clicks;
+	document.getElementById("addToCartClicks").innerHTML=clicks;
+	setTimeout(function() {
+		document.getElementById('cartButton').innerHTML=originalText;
+	}, 950);
+	var item = new pillowSelection(name, color, fill, price);
+	var cart = JSON.parse(localStorage.getItem("cart"));
+	if (cart==null) {
+		cart=[];
+	}
+	cart.push(item);
+	localStorage.setItem("cart", JSON.stringify(cart));
+	console.log('test');
 };
 
-*/
+function cartpageLoad(){
+	var cart = JSON.parse(localStorage.getItem("cart"));
+	if (cart==null) {
+		document.getElementById('productInfo').innnerHTML = "Cart Empty";
+		}
+		else{
+		//change innerhtml to display items
+		for (i = 0; i < cart.length; i++) {
+			var item = cart[i];
+			var itemName = item.name
+			var itemColor = item.color;
+			var itemFill = item.fill;
+			var itemPrice = item.price;
+		}
+}
+	localStorage.setItem("cart", JSON.stringify(cart));
+	console.log('test');
+}
