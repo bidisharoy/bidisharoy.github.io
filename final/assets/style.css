@@ -1,5 +1,5 @@
 *{
-	margin:0;
+	margin:10;
 	padding:0;
 }
 
@@ -7,28 +7,29 @@ body{
 	background-color: #F29C38;
 }
 
-img {
-	width: 40%;
+.mugAnimate img {
+	width: 60%;
 	height: auto;
 }
 
 
  @-webkit-keyframes dropIn {
-  0% {
-    transform: translateY(-100%);
+  10% {
+    transform: translateY(-400%);
   }
-  100% {
-    transform: translateY(50);
+  60% {
+    transform: translateY(-100);
   }
+
 }
 
-.mugAnimate{
-	animation: 2s ease-out 0s 1 dropIn;
+.cloveAnimate{
+	animation: 2s ease-out 2s 1 dropIn;
 	padding: 30px;
 }
 
 
-@keyframes slideInFromLeft {
+/*@keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -40,5 +41,6 @@ img {
 header {  
   animation: 2s ease-out 0s 1 slideInFromLeft;
   padding: 30px;
-}
+}\
+/*
 
