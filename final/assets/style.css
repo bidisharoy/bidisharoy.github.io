@@ -14,18 +14,23 @@ body{
 
 
  @-webkit-keyframes dropIn {
-  10% {
-    transform: translateY(-400%);
+  0% {
+    transform: translateY(-200%);
   }
-  60% {
-    transform: translateY(-100);
+  100% {
+    transform: translateY(200%);
+  }
+  0% {
+    transform: translateY(-200%);
   }
 
 }
 
+
 .cloveAnimate{
+
 	animation: 2s ease-out 2s 1 dropIn;
-	padding: 30px;
+	padding: 0px;
 }
 
 
