@@ -12,40 +12,77 @@ body{
 	height: auto;
 }
 
+}
+.ul li{
+	font-size: 20px;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	padding-left: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-family: "Apple LiGothic";
+	display:inline-block;
+	text-decoration: none;
+	color: #547690;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.anatomyAnimate {
+	float:left;
+}
+
+
+ @-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+
 
  @-webkit-keyframes dropIn {
   0% {
     transform: translateY(-200%);
   }
   100% {
-    transform: translateY(200%);
+    transform: translateY(100%);
   }
-  0% {
-    transform: translateY(-200%);
-  }
-
 }
 
+.cinnamonImage img{
+	width: 400%;
+	height: auto;
+}
+.cinnamonImage{
+	animation: 2s slideInFromLeft;
+	animation-fill-mode: forwards;
+	padding: 0px;
+}
 
-.cloveAnimate{
+.cardamomImage{
+	animation: 2s slideInFromLeft;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+	padding: 0px;
+}
 
-	animation: 2s ease-out 2s 1 dropIn;
+.cloveImage{
+	animation: 2s slideInFromLeft;
+	animation-delay:5s;
+	animation-fill-mode: forwards;
+	padding: 0px;
+}
+
+.gingerImage{
+	animation: 2s slideInFromLeft;
+	animation-delay:7s;
+	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
 
-/*@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-header {  
-  animation: 2s ease-out 0s 1 slideInFromLeft;
-  padding: 30px;
-}\
-/*
 
