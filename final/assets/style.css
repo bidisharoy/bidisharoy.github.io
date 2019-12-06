@@ -1,6 +1,8 @@
 *{
 	margin:10;
 	padding:0;
+	 font-family: "Apple LiGothic", regular;
+
 }
 
 body{
@@ -12,77 +14,87 @@ body{
 	height: auto;
 }
 
-}
-.ul li{
-	font-size: 20px;
-	list-style-type: none;
-	display: inline-block;
-	text-align: center;
-	padding-left: 10px;
-	padding-left: 10px;
-	padding-bottom: 5px;
-	font-family: "Apple LiGothic";
-	display:inline-block;
-	text-decoration: none;
-	color: #547690;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
 .anatomyAnimate {
 	float:left;
+	width: 60%;
+	height: auto;
 }
-
-
- @-webkit-keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-10%);
-  }
-  100% {
-    transform: translateX(500%);
-  }
-}
-
-
  @-webkit-keyframes dropIn {
   0% {
     transform: translateY(-200%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
+
 }
 
-.cinnamonImage img{
-	width: 400%;
-	height: auto;
+
+/*SPICES CONTAINER*/
+.container{
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 2px;
+	margin: 0 auto;
+  	display: flex;
+  	width: 100%;
+  	flex-wrap: wrap;
+  	flex-direction: row;
+	align-items: center;
+  	justify-content: left;
+  	font-family: "Apple LiGothic", regular;
+  	font-size:18px;
+  	padding-left: 40px;
 }
+.container > div {
+	margin: 10px;
+}
+
+
 .cinnamonImage{
-	animation: 2s slideInFromLeft;
+	width: 100%;
+	height: auto;
+	animation: 2s dropIn;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
 .cardamomImage{
-	animation: 2s slideInFromLeft;
+	width: 110%;
+	height: auto;
+	animation: 2s dropIn;
 	animation-delay:3s;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
 .cloveImage{
-	animation: 2s slideInFromLeft;
+	width: 110%;
+	height: auto;
+	animation: 2s dropIn;
 	animation-delay:5s;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
 .gingerImage{
-	animation: 2s slideInFromLeft;
+	animation: 2s dropIn;
 	animation-delay:7s;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
 
+*@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.cloveText {  
+	animation: 2s slideInFromLeft;
+}
 
