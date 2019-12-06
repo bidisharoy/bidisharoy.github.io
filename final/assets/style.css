@@ -14,11 +14,14 @@ body{
 	height: auto;
 }
 
-.anatomyAnimate {
+/*
+.anatomyAnimate img {
+	max-width: 100%;
 	float:left;
-	width: 60%;
 	height: auto;
 }
+*/
+
  @-webkit-keyframes dropIn {
   0% {
     transform: translateY(-200%);
@@ -52,7 +55,7 @@ body{
 
 
 .cinnamonImage{
-	width: 100%;
+	max-width: 100%
 	height: auto;
 	animation: 2s dropIn;
 	animation-fill-mode: forwards;
