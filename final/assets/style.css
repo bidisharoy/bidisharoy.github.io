@@ -11,6 +11,7 @@ body{
 
 .mugAnimate img {
 	width: 60%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -22,18 +23,50 @@ body{
 }
 */
 
- @-webkit-keyframes dropIn {
+/* Animation for the cinnamon image */
+ @-webkit-keyframes cinnamonDropIn {
   0% {
     transform: translateY(-200%);
   }
   100% {
-    transform: translateY(200%);
+    transform: translateY(170%);
   }
 
 }
 
+/* Animation for the cardamom image */
+ @-webkit-keyframes cardamomDropIn {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translate(60%,250%);
+  }
+ }
 
-/*SPICES CONTAINER*/
+/* Animation for the clove image */
+ @-webkit-keyframes cloveDropIn {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translate(-200%,325%);
+  }
+ }
+
+/* Animation for the ginger image */
+ @-webkit-keyframes gingerDropIn {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translate(-250%,170%);
+  }
+ }
+
+
+
+/* Container for the spices at the top of the page, before animations */
 .container{
 	box-sizing: border-box;
 	border-style: solid;
@@ -41,6 +74,7 @@ body{
 	margin: 0 auto;
   	display: flex;
   	width: 100%;
+  	height: auto;
   	flex-wrap: wrap;
   	flex-direction: row;
 	align-items: center;
@@ -49,39 +83,42 @@ body{
   	font-size:18px;
   	padding-left: 40px;
 }
-.container > div {
-	margin: 10px;
-}
 
 
-.cinnamonImage{
+.cinnamonImage img{
 	max-width: 100%
 	height: auto;
-	animation: 2s dropIn;
+	object-fit: contain;
+}
+
+.cinnamonAnimate{
+	animation: 2s cinnamonDropIn;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
-.cardamomImage{
-	width: 110%;
+.cardamomAnimate{
+	max-width: 100%
 	height: auto;
-	animation: 2s dropIn;
+	animation: 2s cardamomDropIn;
 	animation-delay:3s;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
-.cloveImage{
-	width: 110%;
+.cloveAnimate{
+	max-width: 100%
 	height: auto;
-	animation: 2s dropIn;
+	animation: 2s cloveDropIn;
 	animation-delay:5s;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
-.gingerImage{
-	animation: 2s dropIn;
+.gingerAnimate{
+	max-width: 100%
+	height: auto;
+	animation: 2s gingerDropIn;
 	animation-delay:7s;
 	animation-fill-mode: forwards;
 	padding: 0px;
