@@ -1,7 +1,7 @@
 *{
 	margin:10;
 	padding:0;
-	 font-family: "Avenir Next";
+	font-family: "Avenir Next";
 
 }
 
@@ -29,7 +29,7 @@ body{
 .intro{
   display:inline-block;
   vertical-align: center;
-  padding: 10px 20px 30px 10px;
+  padding: 10px 20px 30px 15px;
 }
 a {
   text-decoration: none;
@@ -44,16 +44,12 @@ a:active {
 }
 
 .mugAnimate img {
-	width: 60%;
+	width: 90%;
 	max-width: 100%;
 	height: auto;
 }
 
-.indiaMap img {
-	width: 70%;
-	max-width: 100%;
-	height: auto;
-}
+
 
 /*
 .anatomyAnimate img {
@@ -80,7 +76,7 @@ a:active {
     transform: translateY(-200%);
   }
   100% {
-    transform: translate(60%,250%);
+    transform: translate(60%,275%);
   }
  }
 
@@ -90,7 +86,7 @@ a:active {
     transform: translateY(-200%);
   }
   100% {
-    transform: translate(-200%,325%);
+    transform: translate(-200%,275%);
   }
  }
 
@@ -100,28 +96,27 @@ a:active {
     transform: translateY(-200%);
   }
   100% {
-    transform: translate(-250%,170%);
+    transform: translate(-200%,170%);
   }
  }
 
 
-
 /* Container for the spices at the top of the page, before animations */
 .container{
-	box-sizing: border-box;
-	border-style: solid;
-	border-width: 2px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
 	margin: 0 auto;
-  	display: flex;
-  	width: 100%;
-  	height: auto;
-  	flex-wrap: wrap;
-  	flex-direction: row;
-	  align-items: center;
-  	justify-content: left;
-  	font-family: "Apple LiGothic", regular;
-  	font-size:18px;
-  	padding-left: 40px;
+  display: flex;
+	width: 90%;
+ 	height: auto;
+ 	flex-wrap: wrap;
+ 	flex-direction: row;
+  align-items: center;
+ 	justify-content: left;
+ 	font-family: "Apple LiGothic", regular;
+ 	font-size:18px;
+ 	padding-left: 40px;
 }
 
 
@@ -163,6 +158,8 @@ a:active {
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
+
+
 
 #indiaMap{
 	display: block;
