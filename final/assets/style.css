@@ -1,3 +1,4 @@
+/* Sets light margins & text for the entire website */
 *{
 	margin:10;
 	padding:0;
@@ -5,12 +6,23 @@
 
 }
 
+/* Styling the page header */
 .headerText{
   font-size: 40px;
   color:white;
   display:inline-block;
   float:left;
 }
+
+/* Sets the nav bar to the left, in line with site header */
+.pageTitle{
+  font-size: 22px;
+  float: left;
+  font-weight: lighter;
+  padding-top: 17px;
+}
+
+/* Sets the nav bar to the right, in line with site header -- TABLING THIS FOR NOW
 .pageTitle{
   font-size: 30px;
   display:inline-block;
@@ -18,20 +30,15 @@
   font-weight: lighter;
   padding-top: 10px;
 }
+ */
+
+/* Sets the website background color to an orangey-cream */
 body{
 	background-color: #F29C38;
 }
 
 
-
-/* Styling descriptive text on home/anatomy page */
-.intro{
-  display:inline-block;
-  vertical-align: center;
-  padding: 0px 20px 30px 15px;
-}
-
-/* Removing decorations from hyperlinks */
+/* Removing all decorations from hyperlinks */
 a {
   text-decoration: none;
   color: inherit;
@@ -44,6 +51,16 @@ a:active {
 }
 
 
+/* HOME/ANATOMY PAGE  BELOW */
+
+/* Styling descriptive text on home/anatomy page */
+.intro{
+  display:inline-block;
+  vertical-align: center;
+  padding: 0px 20px 30px 15px;
+}
+
+/* Styles the "Spice Shelf" text */
 .spiceShelf{
 font-weight: bold;
 font-size: 18px;
@@ -74,14 +91,12 @@ font-size: 18px;
   object-fit: cover;
 }
 
-
 /* Cup/Mug image (responsive) */
 .mugAnimate img {
 	width: 90%;
 	max-width: 100%;
 	height: auto;
 }
-
 
 /* Animation for the cinnamon image */
  @-webkit-keyframes cinnamonDropIn {
@@ -91,7 +106,6 @@ font-size: 18px;
   100% {
     transform: translateY(170%);
   }
-
 }
 
 /* Animation for the cardamom image */
@@ -124,14 +138,24 @@ font-size: 18px;
   }
  }
 
+ /* Animation for the tea leaves image */
+ @-webkit-keyframes teaLeavesDropIn {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translate(-200%,270%);
+  }
+ }
 
-
+/* Applies animation to the html element cinnamon; sets speed, coordinates, and state of the animation */
 .cinnamonAnimate{
 	animation: 2s cinnamonDropIn;
 	animation-fill-mode: forwards;
 	padding: 0px;
 }
 
+/* Applies animation to the html element cardamom; sets speed, coordinates, and state of the animation */
 .cardamomAnimate{
 	max-width: 100%
 	height: auto;
@@ -141,6 +165,7 @@ font-size: 18px;
 	padding: 0px;
 }
 
+/* Applies animation to the html element clove; sets speed, coordinates, and state of the animation */
 .cloveAnimate{
 	max-width: 100%
 	height: auto;
@@ -150,6 +175,7 @@ font-size: 18px;
 	padding: 0px;
 }
 
+/* Applies animation to the html element ginger; sets speed, coordinates, and state of the animation */
 .gingerAnimate{
 	max-width: 100%
 	height: auto;
@@ -159,6 +185,19 @@ font-size: 18px;
 	padding: 0px;
 }
 
+/* Applies animation to the html element tea leaves; sets speed, coordinates, and state of the animation */
+.teaLeavesAnimate{
+  max-width: 100%
+  height: auto;
+  animation: 2s gingerDropIn;
+  animation-delay:7s;
+  animation-fill-mode: forwards;
+  padding: 0px;
+}
+
+/* MAP PAGE BELOW */
+
+/* Positions the map & makes it responsive */
 #indiaMap{
 	display: block;
 	position: absolute;
@@ -167,6 +206,8 @@ font-size: 18px;
 	width: 100%;
 	height: 100%;
 }
+
+/* Style of each Indian state upon hover */
 path:hover, circle:hover {
   stroke: green !important;
   stroke-width:4px;
@@ -180,20 +221,26 @@ path:hover, circle:hover {
   cursor: default;
 }
 
+/* Style of the tea type in each pop-up */
 .chaiType{
   font-size: 18px;
   font-weight: lighter;
 
+/* Style of the tea description in each pop-up */
 }
 .description{
   font-size: 14px;
   color:white;
 }
+
+/* Style of the state name section in each pop-up */
 .state{
   font-weight: bold;
   font-size: 22px;
   color:black;
 }
+
+/* Style of the pop-up itself */
 #popup {
   box-shadow: 2px 2px black;
   display: none;
