@@ -1,3 +1,5 @@
+// Interactive map | inspired by https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals?source=post_page-----94a688c11bd6----------------------#making-it-responsive
+
 $("path, circle").hover(function(e) {
   $('#popup').css('display','block');
   $('#popup').html($(this).data('info'));
