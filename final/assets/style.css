@@ -1,17 +1,24 @@
 /* Sets light margins & text for the entire website */
 *{
-	margin:10;
-	padding:0;
+	margin:0;
+	padding:10;
 	font-family: "Avenir Next";
-
 }
 
 /* Styling the page header */
+
+.header{
+	display: block;
+	padding-bottom: 100px;
+	padding-top: 17px;
+
+}
 .headerText{
   font-size: 40px;
   color:white;
   display:inline-block;
   float:left;
+
 }
 
 /* Sets the nav bar to the left, in line with site header */
@@ -19,7 +26,6 @@
   font-size: 22px;
   float: left;
   font-weight: lighter;
-  padding-top: 17px;
 }
 
 /* Sets the nav bar to the right, in line with site header -- TABLING THIS FOR NOW
@@ -34,7 +40,10 @@
 
 /* Sets the website background color to an orangey-cream */
 body{
-	background-color: #F29C38;
+	background-image: url("images/backgroundcolor.jpg");
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+	background-color: #F3D074;
 }
 
 
@@ -83,23 +92,11 @@ font-size: 18px;
   padding-left: 40px;
 }
 
-.container img{
-  max-width: 100%
-  height: auto
-}
-
 /* Cinnamon image styling */
 .cinnamonImage img{
-  max-width: 100%
+  width: 100%
   height: auto;
   object-fit: cover;
-  @media all and (max-width: 360px){
-   .bcd
-   {
-    display:inline-block;
-    width:49%;
-   }
-}
 }
 
 /* Cup/Mug image (responsive) */
@@ -265,4 +262,50 @@ path:hover, circle:hover {
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
+}
+
+.top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+/*  ME styling /animation */
+/* CREDIT TO https://www.taniarascia.com/crossfade-between-two-images-with-css-animations/ */
+section {
+		display: block;
+	}
+
+section img {
+	/* Positions the image & makes it responsive */
+  position: absolute;
+	width: 50%;
+	min-width: 20%;
+	max-width: 70%;
+	height: auto;
+}
+
+.top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
